@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
         txtDate.setText(getCurrentDate());
 
-        String url = "https://api.openweathermap.org/data/2.5/weather?q=Lapu-Lapu,ph&appid=f01e56b126197b3a73960281cf16b8cb&units=Imperial";
+        String url = "https://api.openweathermap.org/data/2.5/weather?q={City},{CountryCode}&appid={Your API Key}&units=Imperial";
 
         JsonObjectRequest request =  new JsonObjectRequest
                 (Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
